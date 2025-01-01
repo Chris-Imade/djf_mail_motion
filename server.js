@@ -124,12 +124,10 @@ app.post("/mail-motion", async (req, res) => {
       });
     }
 
-    // fadafisika@gmail.com
-
     // Email options
     const mailOptions = {
       from: process.env.email,
-      to: "imadechriswebdev@gmail.com",
+      to: "fadafisika@gmail.com",
       subject: `New Contact Form Submission from ${name}`,
       html: createEmailTemplate({ name, phone, email, message }),
       replyTo: email,
